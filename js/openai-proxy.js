@@ -7,7 +7,7 @@ app.use(cors());
 
 app.post('/api/chat', async (req, res) => {
   const { message, history } = req.body;
-  // Compose the conversation history
+  // Compose the history
   const messages = [
     {
       role: 'system',
