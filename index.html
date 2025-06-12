@@ -4,11 +4,9 @@
 <!-- basic -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer-when-downgrade">
 <!-- mobile metas -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="initial-scale=1, maximum-scale=6">
 <!-- site metas -->
 <title>Capiclean</title>
 <meta name="keywords" content="cleaninngpage">
@@ -396,7 +394,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -457,7 +454,6 @@
       }
     }
 
-    var charHistory = [];
     // Send message
     function sendMessage() {
     var input = document.getElementById('chat-input');
@@ -472,6 +468,7 @@
       messages.scrollTop = messages.scrollHeight;
 
       // Call your backend API
+      /*
       fetch('http://localhost:3001/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -492,6 +489,7 @@
         messages.appendChild(reply);
         messages.scrollTop = messages.scrollHeight;
       });
+      */
     }
   }
 
